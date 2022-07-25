@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/tobiascasazza.github.io/castingndn/static/css/main.fa384bec.css",
-    "main.js": "/tobiascasazza.github.io/castingndn/static/js/main.a2c99208.js",
+    "main.css": "/tobiascasazza.github.io/castingndn/static/css/main.ef8a8aa4.css",
+    "main.js": "/tobiascasazza.github.io/castingndn/static/js/main.988abe40.js",
     "static/media/IvanDePineda.png": "/tobiascasazza.github.io/castingndn/static/media/IvanDePineda.507842bb0f7a7d40c656.png",
     "static/media/GregoRosello.png": "/tobiascasazza.github.io/castingndn/static/media/GregoRosello.65bf321bb8d5e6aff150.png",
     "static/media/NicoOcchiato.png": "/tobiascasazza.github.io/castingndn/static/media/NicoOcchiato.17dc178acebfa445b131.png",
     "static/media/Nachito.png": "/tobiascasazza.github.io/castingndn/static/media/Nachito.db53a599ae03fddd16dc.png",
     "static/media/nadieDiceNada.png": "/tobiascasazza.github.io/castingndn/static/media/nadieDiceNada.6cf2b20cfb57976b16d5.png",
     "index.html": "/tobiascasazza.github.io/castingndn/index.html",
-    "main.fa384bec.css.map": "/tobiascasazza.github.io/castingndn/static/css/main.fa384bec.css.map",
-    "main.a2c99208.js.map": "/tobiascasazza.github.io/castingndn/static/js/main.a2c99208.js.map"
+    "main.ef8a8aa4.css.map": "/tobiascasazza.github.io/castingndn/static/css/main.ef8a8aa4.css.map",
+    "main.988abe40.js.map": "/tobiascasazza.github.io/castingndn/static/js/main.988abe40.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa384bec.css",
-    "static/js/main.a2c99208.js"
+    "static/css/main.ef8a8aa4.css",
+    "static/js/main.988abe40.js"
   ]
 }
