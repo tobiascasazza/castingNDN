@@ -22,15 +22,16 @@ h3{
 .card:hover {
     box-shadow: 0 8px 16px 0 rgb(0, 0, 0);
 }
-
 .lista {
     list-style-type: none;
-    display: block;
-    margin-left: 35%;
+    display: inline-block;
+    margin:0 auto;
+    padding: 0;
 }
 
 .contenedor {
-    margin: 20px;
+    display: flex;
+    align-content: center;
 }
 
 img{
