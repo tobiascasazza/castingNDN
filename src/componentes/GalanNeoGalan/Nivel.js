@@ -8,20 +8,32 @@ export default function Nivel(props) {
         console.log("pasa")
         switch (tipo) {
             case props.respuestaGalan:
-                props.setPuntosGalan(props.puntosGalan + 2);
-                props.setContadorPreguntas(contador => contador + 1)
+                props.setPuntosGalan(props.puntosGalan + 1);
+                props.setPuntosNeo(props.puntosNeo - 1);
+                props.setPuntosMedioGalan(props.puntosMedioGalan + 0.5);
+                props.setPuntosMedioNeo(props.puntosMedioNeo - 0.5);
+                props.setContadorPreguntas(contador => contador + 1);
                 break;
             case props.respuestaNeo:
-                props.setPuntosNeo(props.puntosNeo + 2);
-                props.setContadorPreguntas(contador => contador + 1)
+                props.setPuntosGalan(props.puntosGalan - 1);
+                props.setPuntosNeo(props.puntosNeo + 1);
+                props.setPuntosMedioGalan(props.puntosMedioGalan - 0.5);
+                props.setPuntosMedioNeo(props.puntosMedioNeo + 0.5);
+                props.setContadorPreguntas(contador => contador + 1);
                 break;
             case props.respuestaMedioGalan:
-                props.setPuntosGalan(props.puntosGalan + 1);
-                props.setContadorPreguntas(contador => contador + 1)
+                props.setPuntosGalan(props.puntosGalan + 0.5);
+                props.setPuntosNeo(props.puntosNeo - 0.5);
+                props.setPuntosMedioNeo(props.puntosMedioNeo + 0.5);
+                props.setPuntosMedioGalan(props.puntosMedioGalan + 1);
+                props.setContadorPreguntas(contador => contador + 1);
                 break;
             case props.respuestaMedioNeo:
-                props.setPuntosNeo(props.puntosNeo + 1);
-                props.setContadorPreguntas(contador => contador + 1)
+                props.setPuntosGalan(props.puntosGalan - 1);
+                props.setPuntosNeo(props.puntosNeo + 0.5);
+                props.setPuntosMedioNeo(props.puntosMedioNeo + 1);
+                props.setPuntosMedioGalan(props.puntosMedioGalan + 0.5);
+                props.setContadorPreguntas(contador => contador + 1);
                 break;
             default:
                 props.setContadorPreguntas(contador => contador + 1)

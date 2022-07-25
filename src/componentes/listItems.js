@@ -18,15 +18,15 @@ export default function ListItems(props) {
     <React.Fragment>
     <ListItemButton onClick={() => {props.SetOpcion(0)}}>
         <ListItemIcon>
-        <GiBowTie size={18}/><TbMinusVertical size={18}/>< GiSunglasses size={18}/>
+        <GiBowTie size={18} color='#F9C206'/><TbMinusVertical size={18} color='#F9C206'/>< GiSunglasses size={18} color='#F9C206'/>
         </ListItemIcon>
-        <ListItemText primary="Galan o NeoGalan" />
+        <ListItemText primary="Galan o NeoGalan" color='#F9C206'/>
       </ListItemButton>
       <ListItemButton onClick={() => {props.SetOpcion(1)}}>
         <ListItemIcon>
-        <FaFrog size={18}/><TbMinusVertical size={18}/><GiRat size={18}/>
+        <FaFrog size={18} color='#F9C206'/><TbMinusVertical size={18} color='#F9C206'/><GiRat size={18} color='#F9C206'/>
         </ListItemIcon>
-        <ListItemText primary="Rana o Rata" />
+        <ListItemText primary="Rana o Rata"  color='#F9C206'/>
       </ListItemButton>
       
     </React.Fragment>

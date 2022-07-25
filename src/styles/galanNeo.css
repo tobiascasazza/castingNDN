@@ -1,13 +1,12 @@
-h1 {
-    text-align: center;
-}
+
 
 h3{
     text-align: center;
-    color: gray;
+    color: grey;
 }
 
 .card {
+    background-color: #FF2939;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.5s;
     border-radius: 5px;
@@ -16,6 +15,8 @@ h3{
     cursor: pointer;
     min-width: 300px;
     text-align: center;
+    color: #F9C206;
+    text-shadow: 1px 1px black;
 }
 
 .card:hover {

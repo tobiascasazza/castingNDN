@@ -40,6 +40,7 @@ const drawerWidth = 280;
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== 'open',
 })(({ theme, open }) => ({
+  backgroundColor: '#FF2939',
   zIndex: theme.zIndex.drawer + 1,
   transition: theme.transitions.create(['width', 'margin'], {
     easing: theme.transitions.easing.sharp,
@@ -60,6 +61,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     '& .MuiDrawer-paper': {
       position: 'relative',
       whiteSpace: 'nowrap',
+      backgroundColor: '#FF2939',
       width: drawerWidth,
       transition: theme.transitions.create('width', {
         easing: theme.transitions.easing.sharp,
@@ -95,16 +97,16 @@ export default function Principal(props) {
   };
 
 
-  React.useEffect(()=>{
-    switch(opcion){
+  React.useEffect(() => {
+    switch (opcion) {
       case 0:
         setPagina(<GalanNeoGalan />)
         break;
       case 1:
-        setPagina(<RataRana/>)
+        setPagina(<RataRana />)
         break;
     }
-  },[opcion])
+  }, [opcion])
 
   return (
     <ThemeProvider theme={mdTheme}>
@@ -128,7 +130,18 @@ export default function Principal(props) {
               }}
             >
               <MenuIcon />
+
             </IconButton>
+            <Typography
+              component="h1"
+              variant="h6"
+              color="inherit"
+              noWrap
+              sx={{ flexGrow: 1 }}
+            >
+              {opcion == 0 ? <h5>DESCUBRÍ SI SOS GALAN O NEOGALAN</h5> : <h5>ENTRENA TUS HABILIDADES PARA DIFERENCIAR QUE PERSONAS SON RATAS O RANAS!</h5>}
+            </Typography>
+
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open} >
@@ -147,7 +160,7 @@ export default function Principal(props) {
           </Toolbar>
           <Divider />
           <List component="nav">
-            <ListItems Opcion={opcion} SetOpcion={setOpcion}/>
+            <ListItems Opcion={opcion} SetOpcion={setOpcion} />
             <Divider sx={{ my: 3 }} />
           </List>
         </Drawer>

@@ -6,39 +6,52 @@ import grego from "../../imagenes/GregoRosello.png"
 import "../../styles/galanNeo.css"
 
 export default function Resolucion(props){
-    const totalPuntos = props.puntosGalan + props.puntosNeo;
-    const porcentajeGalan =  props.puntosGalan / totalPuntos ;
-    const porcentajeNeoGalan =  props.puntosNeo / totalPuntos ;
 
     function pantallasResultado(){
-        if(porcentajeGalan > 0.75){
+        if(
+            props.puntosGalan > props.puntosMedioGalan &&
+            props.puntosGalan > props.puntosMedioNeo &&
+            props.puntosGalan > props.puntosNeo
+            ){
             return(
                 <>
-                    <h3>Sos todo un Galan! {porcentajeGalan * 100}% Galan</h3>
+                    <h3>Sos todo un Galan!</h3>
                     <img src={ivanImagen} width="50%" height="50%" alt="Ivan"/>
                 </>
             )
         }
-        if(porcentajeGalan > 0.50 && porcentajeGalan <= 0.75){
+        if(
+            props.puntosMedioGalan > props.puntosGalan &&
+            props.puntosMedioGalan > props.puntosMedioNeo &&
+            props.puntosMedioGalan > props.puntosNeo
+            ){
             return(
                 <>
-                    <h3>Sos un galan en deconstruccion a su NeoGalanes! {porcentajeGalan * 100}% Galan</h3>
+                    <h3>Sos un Galan que adquirio cosas de NeoGalan !</h3>
                     <img src={nicoOcchiato} width="50%" height="50%" alt="Nico"/>
                 </>
             )
         }
-        if(porcentajeGalan > 0.25 && porcentajeGalan < 0.50){
+        if(
+            props.puntosMedioNeo > props.puntosMedioGalan &&
+            props.puntosMedioNeo > props.puntosGalan &&
+            props.puntosMedioNeo > props.puntosNeo
+            ){
             return(
                 <>
-                    <h3>Estas muy cerca de ser NeoGalan! {porcentajeNeoGalan * 100}% NeoGalan</h3>
+                    <h3>Estas muy cerca de ser NeoGalan!</h3>
                     <img src={grego} width="50%" height="50%" alt="Grego"/>
                 </>
             )
         }
-        if(porcentajeGalan < 0.25){
+        if(
+            props.puntosNeo > props.puntosMedioGalan &&
+            props.puntosNeo > props.puntosMedioNeo &&
+            props.puntosNeo > props.puntosGalan
+            ){
             return(
                 <>
-                    <h3>Sos todo un NeoGalan! {porcentajeNeoGalan * 100}% NeoGalan</h3>
+                    <h3>Sos todo un NeoGalan!</h3>
                     <img src={nachito} width="50%" height="50%" alt="Nachito"/>
                 </>
             )

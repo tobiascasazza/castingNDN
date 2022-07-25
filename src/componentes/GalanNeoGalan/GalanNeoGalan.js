@@ -8,13 +8,19 @@ export default function GalanNeoGalan() {
     const [contadorPreguntas, setContadorPreguntas] = React.useState(0);
     const [puntosGalan, setPuntosGalan] = React.useState(0);
     const [puntosNeo, setPuntosNeo] = React.useState(0);
+    const [puntosMedioGalan, setPuntosMedioGalan] = React.useState(0);
+    const [puntosMedioNeo, setPuntosMedioNeo] = React.useState(0);
 
     return (
         <>
-            <h1>Descubrí si sos Galan o Neo Galan</h1>
             {
                 contadorPreguntas >= preguntas.length ?
-                    <Resolucion puntosGalan={puntosGalan} puntosNeo={puntosNeo} />
+                    <Resolucion 
+                        puntosGalan={puntosGalan} 
+                        puntosNeo={puntosNeo} 
+                        puntosMedioGalan={puntosMedioGalan} 
+                        puntosMedioNeo={puntosMedioNeo} 
+                    />
                     :
                     <Nivel 
                         pregunta={preguntas[contadorPreguntas].pregunta}
@@ -25,6 +31,10 @@ export default function GalanNeoGalan() {
                         setPuntosGalan={setPuntosGalan} 
                         setPuntosNeo={setPuntosNeo} 
                         setContadorPreguntas={setContadorPreguntas}
+                        setPuntosMedioGalan={setPuntosMedioGalan}
+                        setPuntosMedioNeo={setPuntosMedioNeo}
+                        puntosMedioGalan={puntosMedioGalan}
+                        puntosMedioNeo={puntosMedioNeo}
                         puntosGalan={puntosGalan}
                         puntosNeo={puntosNeo} 
                         contadorPreguntas={contadorPreguntas} />
