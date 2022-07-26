@@ -74,7 +74,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
           easing: theme.transitions.easing.sharp,
           duration: theme.transitions.duration.leavingScreen,
         }),
-        width: theme.spacing(7),
+        width: theme.spacing(8),
         [theme.breakpoints.up('sm')]: {
           width: theme.spacing(9),
         },
@@ -90,7 +90,7 @@ export default function Principal(props) {
 
   const [opcion, setOpcion] = React.useState(0);
   const [pagina, setPagina] = React.useState();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const history = useHistory();
   const toggleDrawer = () => {
     setOpen(!open);
@@ -129,7 +129,7 @@ export default function Principal(props) {
                 ...(open && { display: 'none' }),
               }}
             >
-              <MenuIcon />
+              <MenuIcon htmlColor="#F9C206"/>
 
             </IconButton>
             <Typography
@@ -155,7 +155,7 @@ export default function Principal(props) {
           >
             <img src={logoNDN} alt='logoNDN' width="80%" height="80%" ></img>
             <IconButton onClick={toggleDrawer}>
-              <ChevronLeftIcon />
+              <ChevronLeftIcon fontSize="large" htmlColor="#F9C206"/>
             </IconButton>
           </Toolbar>
           <Divider />
@@ -165,6 +165,7 @@ export default function Principal(props) {
           </List>
         </Drawer>
         <Box
+        style={{textAlign: "center"}}
           component="main"
           sx={{
             backgroundColor: (theme) =>
@@ -178,7 +179,7 @@ export default function Principal(props) {
         >
 
           <Toolbar />
-          <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+          <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }} >
             {pagina}
           </Container>
         </Box>

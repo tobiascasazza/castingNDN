@@ -6,4 +6,9 @@
 h5 {
     text-align: center;
     color: black;
+    font-size: 1.5vw;
+}
+
+.itemButtom{
+    padding-left: '1px' !important;
 }

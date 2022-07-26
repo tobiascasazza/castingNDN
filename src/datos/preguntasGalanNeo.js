@@ -17,8 +17,8 @@ export const preguntas = [
         pregunta: "Compañera nueva de laburo y te encanta ¿Como seducís?",
         respuestaGalan: "Me acerco a su puesto de trabajo y meta chamuyo",
         respuestaNeo: "Saco charla de sentimientos y experiencias",
-        respuestaMedioGalan: "Le pregunto que onda conmigo a las amigas",
-        respuestaMedioNeo: "La agrego a Instagram y respondo historias"
+        respuestaMedioGalan: "La agrego a Instagram y respondo historias",
+        respuestaMedioNeo: "Le pregunto que onda conmigo a las amigas"
     },
     {
         pregunta: "Tenes que subir una foto para que te reaccione a mejores amigos ¿Que subís?",
