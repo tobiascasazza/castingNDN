@@ -155,6 +155,7 @@ export default function Principal(props) {
               px: [1],
             }}
           >
+            <img src={logoNDN} alt='logoNDN' width="80%" height="80%" ></img>
             <IconButton onClick={toggleDrawer}>
               <ChevronLeftIcon fontSize="large" htmlColor="#F9C206"/>
             </IconButton>
