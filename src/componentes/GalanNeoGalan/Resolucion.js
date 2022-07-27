@@ -16,7 +16,7 @@ export default function Resolucion(props){
             return(
                 <>
                     <h3>Sos todo un Galan!</h3>
-                    <img src={ivanImagen} width="50%" height="50%" alt="Ivan"/>
+                    <img src={ivanImagen} width="50%" height="50%" alt="Ivan" style={{}}/>
                 </>
             )
         }

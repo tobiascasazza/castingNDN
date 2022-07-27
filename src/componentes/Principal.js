@@ -112,13 +112,14 @@ export default function Principal(props) {
     <ThemeProvider theme={mdTheme}>
       <Box sx={{ display: 'flex' }}>
         <CssBaseline />
-        <AppBar position="absolute" open={open}>
+        <AppBar position="absolute" open={open} style={{maxHeight: '80px'}}>
+        
           <Toolbar
             sx={{
               pr: '24px', // keep right padding when drawer closed}
             }}
           >
-
+            
             <IconButton
               edge="start"
               color="inherit"
@@ -129,6 +130,7 @@ export default function Principal(props) {
                 ...(open && { display: 'none' }),
               }}
             >
+              
               <MenuIcon htmlColor="#F9C206"/>
 
             </IconButton>
