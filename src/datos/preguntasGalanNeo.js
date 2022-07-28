@@ -43,7 +43,7 @@ export const preguntas = [
     },
     {
         pregunta: "Estas en una fiesta y hay de todo para tomar. BARRA LIBRE ¿Que te pedis?",
-        respuestaGalan: "Whisky",
+        respuestaGalan: "Vodka con Speed",
         respuestaNeo: "Vino",
         respuestaMedioGalan: "Birra de lo que haya",
         respuestaMedioNeo: "Gin Tonic"
