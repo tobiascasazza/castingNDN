@@ -119,7 +119,6 @@ export default function Principal(props) {
               pr: '24px', // keep right padding when drawer closed}
             }}
           >
-            
             <IconButton
               edge="start"
               color="inherit"
@@ -130,7 +129,7 @@ export default function Principal(props) {
                 ...(open && { display: 'none' }),
               }}
             >
-              
+               
               <MenuIcon htmlColor="#F9C206"/>
 
             </IconButton>
@@ -155,6 +154,7 @@ export default function Principal(props) {
               px: [1],
             }}
           >
+            <img src={logoNDN} alt='logoNDN' width="70%" height="70%" ></img>
             <IconButton onClick={toggleDrawer}>
               <ChevronLeftIcon fontSize="large" htmlColor="#F9C206"/>
             </IconButton>
