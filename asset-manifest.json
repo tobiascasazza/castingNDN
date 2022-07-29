@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/castingNDN/static/css/main.f9862180.css",
-    "main.js": "/castingNDN/static/js/main.c7279993.js",
+    "main.js": "/castingNDN/static/js/main.dd736381.js",
     "static/media/IvanDePineda.png": "/castingNDN/static/media/IvanDePineda.507842bb0f7a7d40c656.png",
     "static/media/GregoRosello.png": "/castingNDN/static/media/GregoRosello.65bf321bb8d5e6aff150.png",
     "static/media/NicoOcchiato.png": "/castingNDN/static/media/NicoOcchiato.17dc178acebfa445b131.png",
@@ -9,10 +9,10 @@
     "static/media/nadieDiceNada.png": "/castingNDN/static/media/nadieDiceNada.6cf2b20cfb57976b16d5.png",
     "index.html": "/castingNDN/index.html",
     "main.f9862180.css.map": "/castingNDN/static/css/main.f9862180.css.map",
-    "main.c7279993.js.map": "/castingNDN/static/js/main.c7279993.js.map"
+    "main.dd736381.js.map": "/castingNDN/static/js/main.dd736381.js.map"
   },
   "entrypoints": [
     "static/css/main.f9862180.css",
-    "static/js/main.c7279993.js"
+    "static/js/main.dd736381.js"
   ]
 }
