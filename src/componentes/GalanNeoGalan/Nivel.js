@@ -5,7 +5,6 @@ import Carta from "./Carta";
 export default function Nivel(props) {
 
     function onClickRespuesta(tipo) {
-        console.log("pasa")
         switch (tipo) {
             case props.respuestaGalan:
                 props.setPuntosGalan(props.puntosGalan + 1);

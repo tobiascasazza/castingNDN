@@ -3,11 +3,16 @@ import ivanImagen from "../../imagenes/IvanDePineda.png"
 import nicoOcchiato from "../../imagenes/NicoOcchiato.png"
 import nachito from "../../imagenes/Nachito.png"
 import grego from "../../imagenes/GregoRosello.png"
+import fede from "../../imagenes/FedeBal.png"
 import "../../styles/galanNeo.css"
 
 export default function Resolucion(props){
 
     function pantallasResultado(){
+        console.log("Puntos Galan:" + props.puntosGalan)
+            console.log("Puntos Medio Galan:" + props.puntosMedioGalan)
+            console.log("Puntos Medio NeoGalan:" + props.puntosMedioNeo)
+            console.log("Puntos NeoGalan:" + props.puntosNeo)
         if(
             props.puntosGalan > props.puntosMedioGalan &&
             props.puntosGalan > props.puntosMedioNeo &&
@@ -20,8 +25,8 @@ export default function Resolucion(props){
                 </>
             )
         }
-        if(
-            props.puntosMedioGalan > props.puntosGalan &&
+        else if(
+            props.puntosMedioGalan >= props.puntosGalan &&
             props.puntosMedioGalan > props.puntosMedioNeo &&
             props.puntosMedioGalan > props.puntosNeo
             ){
@@ -32,10 +37,10 @@ export default function Resolucion(props){
                 </>
             )
         }
-        if(
+        else if(
             props.puntosMedioNeo > props.puntosMedioGalan &&
             props.puntosMedioNeo > props.puntosGalan &&
-            props.puntosMedioNeo > props.puntosNeo
+            props.puntosMedioNeo >= props.puntosNeo
             ){
             return(
                 <>
@@ -44,7 +49,7 @@ export default function Resolucion(props){
                 </>
             )
         }
-        if(
+        else if(
             props.puntosNeo > props.puntosMedioGalan &&
             props.puntosNeo > props.puntosMedioNeo &&
             props.puntosNeo > props.puntosGalan
@@ -55,12 +60,21 @@ export default function Resolucion(props){
                     <img src={nachito} width="50%" height="50%" alt="Nachito"/>
                 </>
             )
+        }else{
+            return(
+                <>
+                    <h3>Sos un intermedio, tenes buenos dotes de Galan y de NeoGalan. Que no se te suba a la cabeza!</h3>
+                    <img src={fede} width="50%" height="50%" alt="Fede Bal"/>
+                </>
+            )
         }
+        
     }
 
     return(
         <>
         {
+            
            pantallasResultado()
         }
         </>

@@ -25,7 +25,7 @@ export default function GalanNeoGalan() {
     return (
         <>
             <div style={{textAlign: 'end'}}>
-            <Button variant="outlined" color='error' onClick={reiniciar}>Reiniciar</Button>
+            <Button variant="outlined" color='error' onClick={reiniciar} style={{fontSize: "0.6rem"}}>Reiniciar</Button>
             </div>
             
             {
