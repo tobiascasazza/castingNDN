@@ -14,7 +14,7 @@ export default function Resolucion(props){
             console.log("Puntos Medio NeoGalan:" + props.puntosMedioNeo)
             console.log("Puntos NeoGalan:" + props.puntosNeo)
         if(
-            props.puntosGalan > props.puntosMedioGalan &&
+            props.puntosGalan >= props.puntosMedioGalan &&
             props.puntosGalan > props.puntosMedioNeo &&
             props.puntosGalan > props.puntosNeo
             ){
@@ -26,7 +26,7 @@ export default function Resolucion(props){
             )
         }
         else if(
-            props.puntosMedioGalan >= props.puntosGalan &&
+            props.puntosMedioGalan > props.puntosGalan &&
             props.puntosMedioGalan > props.puntosMedioNeo &&
             props.puntosMedioGalan > props.puntosNeo
             ){
@@ -40,7 +40,7 @@ export default function Resolucion(props){
         else if(
             props.puntosMedioNeo > props.puntosMedioGalan &&
             props.puntosMedioNeo > props.puntosGalan &&
-            props.puntosMedioNeo >= props.puntosNeo
+            props.puntosMedioNeo > props.puntosNeo
             ){
             return(
                 <>
@@ -51,7 +51,7 @@ export default function Resolucion(props){
         }
         else if(
             props.puntosNeo > props.puntosMedioGalan &&
-            props.puntosNeo > props.puntosMedioNeo &&
+            props.puntosNeo >= props.puntosMedioNeo &&
             props.puntosNeo > props.puntosGalan
             ){
             return(

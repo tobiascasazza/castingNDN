@@ -20,7 +20,7 @@ import ListItems from './listItems';
 import styles from "../styles/paginaPrincipal.module.css"
 import logoNDN from "../imagenes/nadieDiceNada.png"
 import GalanNeoGalan from "./GalanNeoGalan/GalanNeoGalan";
-import RataRana from "./RataRana";
+import RataRana from "./RataRana/RataRana";
 
 function Copyright(props) {
   return (
@@ -140,7 +140,7 @@ export default function Principal(props) {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              {opcion == 0 ? <h5>DESCUBRÍ SI SOS GALAN O NEOGALAN</h5> : <h5>ENTRENA TUS HABILIDADES PARA DIFERENCIAR QUE PERSONAS SON RATAS O RANAS!</h5>}
+              {opcion == 0 ? <h5>DESCUBRÍ SI SOS GALAN O NEOGALAN</h5> : <h5>DESCUBRI SI SOS RATA O RANA!</h5>}
             </Typography>
 
           </Toolbar>

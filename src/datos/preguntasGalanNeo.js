@@ -30,9 +30,9 @@ export const preguntas = [
     {
         pregunta: "Viernes a la noche y te invitan a estos lugares ¿A cual vas?",
         respuestaGalan: "Boliche de Cachengue",
-        respuestaNeo: "Concierto Under",
+        respuestaNeo: "Fiesta Electronica",
         respuestaMedioGalan: "Previa con minas y vemos en que termina",
-        respuestaMedioNeo: "Fiesta Electronica"
+        respuestaMedioNeo: "Probar una nueva cervecería"
     },
     {
         pregunta: "Primera cita ¿Donde propones?",
@@ -49,11 +49,11 @@ export const preguntas = [
         respuestaMedioNeo: "Gin Tonic"
     },
     {
-        pregunta: "Domingo a la tarde solo en casa ¿Que te miras en la tele?",
-        respuestaGalan: "Futbol de la Liga Argentina",
-        respuestaNeo: "La serie española que me recomendaron",
-        respuestaMedioGalan: "Peli de Accion",
-        respuestaMedioNeo: "La tengo de fondo mientras veo las redes sociales"
+        pregunta: 'Un amigo tuyo te pregunta si tenes alguna amiga para presentarle',
+        respuestaGalan: "No tengo amigas, solo chamuyo y si no va, no hablo mas",
+        respuestaNeo: "Tengo muchisimas amigas, podría elegir con cual matchea mejor",
+        respuestaMedioGalan: "Tengo pocas amigas, aunque chape con la mayoria",
+        respuestaMedioNeo: "Podría presentarle a alguna de mis amigas, menos a la que me gusta en secreto"
     },
     {
         pregunta: "Estas chamuyando y te saca el tema ASTROLOGIA. ¿Como reaccionas?",
@@ -63,10 +63,10 @@ export const preguntas = [
         respuestaMedioNeo: "No estoy tan al tanto pero me interesa escuchar"
     },
     {
-        pregunta: '"Uff, que dia duro de laburo, pero que bueno que ahora voy a..."',
-        respuestaGalan: "Jugar al futbol con los pibes",
-        respuestaNeo: "Tomar clases de Musica/Baile/Arte",
-        respuestaMedioGalan: "Estallar Inner Circle",
-        respuestaMedioNeo: "Juntarme a charlar con amigos."
+        pregunta: '"El otro dia jugue un partido de futbol, y la rompi porque..."',
+        respuestaGalan: "Meti muchos goles (aunque fueron abajo del arco)",
+        respuestaNeo: "[No me gusta el futbol, no respondo]",
+        respuestaMedioGalan: "Hice jugar muy bien al equipo",
+        respuestaMedioNeo: "Meti un caño y un sombrero."
     },
 ]
