@@ -21,6 +21,7 @@ import styles from "../styles/paginaPrincipal.module.css"
 import logoNDN from "../imagenes/nadieDiceNada.png"
 import GalanNeoGalan from "./GalanNeoGalan/GalanNeoGalan";
 import RataRana from "./RataRana/RataRana";
+import CargarRataRana from "./CargarRataRana/CargarRataRana"
 
 function Copyright(props) {
   return (
@@ -105,6 +106,8 @@ export default function Principal(props) {
       case 1:
         setPagina(<RataRana />)
         break;
+      case 2:
+        setPagina(<CargarRataRana/>)
     }
   }, [opcion])
 
@@ -140,7 +143,7 @@ export default function Principal(props) {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              {opcion == 0 ? <h5>DESCUBRÍ SI SOS GALAN O NEOGALAN</h5> : <h5>DESCUBRI SI SOS RATA O RANA!</h5>}
+              {opcion == 0 ? <h5>DESCUBRÍ SI SOS GALAN O NEOGALAN</h5> : opcion == 1 ? <h5>DESCUBRI SI SOS RATA O RANA!</h5> : <h5>CARGA DE RATA O RANA!</h5>}
             </Typography>
 
           </Toolbar>

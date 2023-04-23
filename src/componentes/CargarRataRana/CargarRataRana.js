@@ -1,8 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
-import "../../styles/rataRana.modules.css"
-import Carta from "../GalanNeoGalan/Carta";
+import React, {useState, useRef, useEffect} from "react";
 import * as faceapi from "face-api.js";
-import genteCenando from "../../imagenes/genteCenando.png"
+import Carta from "../GalanNeoGalan/Carta";
 
 export default function RataRana() {
     const [playing, setPlaying] = useState(false);

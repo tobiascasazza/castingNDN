@@ -30,6 +30,13 @@ export default function ListItems(props) {
           </ListItemIcon>
           <ListItemText primary="Rana o Rata" color='#F9C206' style={{paddingLeft:"15px"}}/>
         </ListItemButton>
+
+        <ListItemButton onClick={() => { props.SetOpcion(2) }} style={{paddingLeft: "5%"}}>
+          <ListItemIcon>
+            <FaFrog size={18} color='#F9C206' /><TbMinusVertical size={18} color='#F9C206' /><GiRat size={18} color='#F9C206' />
+          </ListItemIcon>
+          <ListItemText primary="Rana o Rata" color='#F9C206' style={{paddingLeft:"15px"}}/>
+        </ListItemButton>
       </React.Fragment>
     </>
   );
